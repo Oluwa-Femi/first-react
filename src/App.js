@@ -9,13 +9,8 @@ function App(){
         <div>
             <Header />
             <ContactCard 
-            name="Mr. Vitory Ebhohon" 
-            imgURL="../Desert.jpg" 
-            phone="08039101861" 
-            email="victory.ebhohon@gmail.com" />
-            
-            <ContactCard />
-            <ContactCard />
+            contact={{name: "Mr. Vitory Ebhohon", imgURL:"../Desert.jpg", phone: "08039101861", email:"victory.ebhohon@gmail.com"  }} />
+
             <Footer />
         </div>
     );
