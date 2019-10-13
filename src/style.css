@@ -14,3 +14,8 @@ body{
     align-items: center;
 }
 
+.contact-card{
+    height: 100px;
+    width: 200px;;
+    background-color: aquamarine;
+}

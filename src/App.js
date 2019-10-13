@@ -1,20 +1,24 @@
-import React from 'react';
+import React from 'react'
 
-import Footer from './components/Footer';
-import Header from './components/Header';
-import TodoItem from './components/TodoItem';
+import Footer from './components/Footer'
+import Header from './components/Header'
+import ContactCard from './components/ContactCard'
 
 function App(){
     return (
         <div>
             <Header />
-            <TodoItem />
-            <TodoItem />
-            <TodoItem />
+            <ContactCard 
+            name="Mr. Vitory Ebhohon" 
+            imgURL="../Desert.jpg" 
+            phone="08039101861" 
+            email="victory.ebhohon@gmail.com" />
+            
+            <ContactCard />
+            <ContactCard />
             <Footer />
         </div>
     );
 }
-
 
 export default App;
