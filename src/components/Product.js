@@ -7,6 +7,7 @@ function Product(props){
             <p>Product: {props.name}</p>
             <p>Price: {props.price}</p>
             <p>Description: {props.description}</p>
+            <hr />
         </div>
     )
 }
