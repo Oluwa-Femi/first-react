@@ -2,7 +2,7 @@ const productsData = [
     {
         id: "1",
         name: "pencil",
-        price: "1",
+        price: 1,
         description: "Perfect fro those who can't remeber things."
     },
     {
