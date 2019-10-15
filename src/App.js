@@ -7,7 +7,7 @@ import Joke from './components/Joke'
 import jokesData from './JokesData'
 
 function App(){
-    const jokeComponents = jokesData.map(joke => <Joke question={joke.question} punchLine={joke.punchLine} />)
+    const jokeComponents = jokesData.map(joke => <Joke key={joke.id} question={joke.question} punchLine={joke.punchLine} />)
 
     return (
         <div>
