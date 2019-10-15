@@ -12,9 +12,6 @@ function App(){
     return (
         <div>
             <Header />
-            {jokeComponents}
-            <ContactCard 
-            contact={{name: "Mr. Elvis Onobo", imgURL:"../Desert.jpg", phone: "08039101861", email:"victory.ebhohon@gmail.com"  }} />
 
             <Footer />
         </div>
