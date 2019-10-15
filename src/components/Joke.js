@@ -4,8 +4,8 @@ import '../style.css'
 function Joke(props){
     return(
         <div>
-            <p style={{display: props.jokes.question ? "block" : "none"}}>Question: {props.jokes.question}</p>
-            <p style={{color: !props.jokes.question && "red"}}>Punch Line: {props.jokes.punchline}</p>
+            <p style={{display: props.question ? "block" : "none"}}>Question: {props.question}</p>
+            <p style={{color: !props.question && "red"}}>Punch Line: {props.punchLine}</p>
             <hr />
         </div>
     )
