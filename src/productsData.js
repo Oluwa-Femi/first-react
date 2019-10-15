@@ -12,3 +12,5 @@ const productsData = [
         description: "perfect for those who make a lot of mistakes"
     }
 ]
+
+export default productsData
