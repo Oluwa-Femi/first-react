@@ -32,25 +32,56 @@ import TodoItem from './components/TodoItem'
 
 // const todoComponents = TodosData.map(item => <TodoItem key={item.id} item={item.item}   /> )
 
+// class App extends Component{
+//     constructor(){
+//         super()
+
+//         this.state = {
+//             todos: TodosData
+//         }
+//     }
+
+//     render(){
+//         const todoItems = TodosData.map(item => <TodoItem key={item.id} item={item.item}   /> )
+
+//         function handler(){
+//             console.log("You are ontop of me")
+//         }
+
+//         return(
+//             <div>
+//                 <p>{todoItems}</p>
+//                 <button onMouseOver={handler }>Click Me</button>
+//             </div>         
+//         )
+//     }
+// }
+
 class App extends Component{
     constructor(){
         super()
-
         this.state = {
-            todos: TodosData
+            count: 0
         }
+        this.handleClick = this.handleClick.bind(this)
+    }
+
+    handleClick(){
+        this.setState(prevState => {
+            return{
+                count: prevState.count + 1
+            }
+        })
     }
 
     render(){
-        const todoItems = TodosData.map(item => <TodoItem key={item.id} item={item.item}   /> )
-
         return(
             <div>
-                <p>{todoItems}</p>
-            </div>         
+                <h1>{this.state.count}</h1>
+                <button onClick={this.handleClick}>Change</button>
+            </div>
         )
     }
 }
-
 
 export default App

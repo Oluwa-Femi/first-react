@@ -4,12 +4,12 @@ const TodosData = [
     {
         id: 1,
         item: "Do item A",
-        done: true
+        completed: true
     },
     {
         id: 2,
         item: "Do item B",
-        done: false
+        completed: false
     }
 
 ]
