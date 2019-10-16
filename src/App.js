@@ -1,4 +1,4 @@
-import React from 'react'
+import React, {Component} from 'react'
 
 // import Footer from './components/Footer'
 // import Header from './components/Header'
@@ -28,20 +28,19 @@ import React from 'react'
 //     )
 // }
 
-class App extends React.Component{
+class App extends Component{
     constructor(){
         super()
-        this.state ={
-            name: "Elvis Onobo",
-            age: 30
+
+        this.state = {
+            isLoggedIn: true
         }
     }
 
     render(){
         return(
             <div>
-                <h1>My name is {this.state.name}</h1>
-                <h1>I am {this.state.age} years old</h1>
+                <h1>You are currently logged { this.state.isLoggedIn ? "In" : "Out" }</h1>
             </div>
         )
     }
