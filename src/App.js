@@ -29,10 +29,17 @@ import React from 'react'
 // }
 
 class App extends React.Component{
+    constructor(){
+        super()
+        this.state = {
+            answer : "Yes"
+        }
+    }
+
     render(){
-        return (
+        return(
             <div>
-                <p>The code goes here</p>
+                <h1>Is state important to know? {this.state.answer}!</h1>
             </div>
         )
     }
