@@ -1,5 +1,7 @@
 import React, {Component} from 'react'
 
+import TodosData from './TodosData'
+import TodoItem from './components/TodoItem'
 // import Footer from './components/Footer'
 // import Header from './components/Header'
 // import ContactCard from './components/ContactCard'
@@ -28,22 +30,27 @@ import React, {Component} from 'react'
 //     )
 // }
 
+// const todoComponents = TodosData.map(item => <TodoItem key={item.id} item={item.item}   /> )
+
 class App extends Component{
     constructor(){
         super()
 
         this.state = {
-            isLoggedIn: true
+            todos: TodosData
         }
     }
 
     render(){
+        const todoItems = TodosData.map(item => <TodoItem key={item.id} item={item.item}   /> )
+
         return(
             <div>
-                <h1>You are currently logged { this.state.isLoggedIn ? "In" : "Out" }</h1>
-            </div>
+                <p>{todoItems}</p>
+            </div>         
         )
     }
 }
+
 
 export default App
