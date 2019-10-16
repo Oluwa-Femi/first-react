@@ -31,15 +31,17 @@ import React from 'react'
 class App extends React.Component{
     constructor(){
         super()
-        this.state = {
-            answer : "Yes"
+        this.state ={
+            name: "Elvis Onobo",
+            age: 30
         }
     }
 
     render(){
         return(
             <div>
-                <h1>Is state important to know? {this.state.answer}!</h1>
+                <h1>My name is {this.state.name}</h1>
+                <h1>I am {this.state.age} years old</h1>
             </div>
         )
     }
